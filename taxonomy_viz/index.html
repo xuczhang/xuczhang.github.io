@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<script src="https://d3js.org/d3.v4.js"></script>
+<title>Collapsible Tree</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<style>
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 2px;
+  font: 18px;
+  background: #ffff99;
+  border: 2px solid;
+  border-radius: 8px;
+  pointer-events: none;
+}
+</style>
+</head>
+<body>
+
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+</script>
+
+</body>
+</html>
