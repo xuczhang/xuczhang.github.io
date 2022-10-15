@@ -170,7 +170,7 @@ width / 5
 )}
 
 function _margin(){return(
-{top: 10, right: 120, bottom: 10, left: 40}
+{top: 10, right: 120, bottom: 10, left: 60}
 )}
 
 function _d3(require){return(
